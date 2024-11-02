@@ -46,7 +46,7 @@ return (
       <button onClick={() => handleLimparFiltro()} className="bg-white text-black w-full rounded-lg">Limpar filtro</button>
     </div>
 
-    <div className="pt-10 flex flex-col gap-4 h-screen bg-gray-600 ">
+    <div className="pt-10 flex flex-col gap-4 h-full bg-gray-600 ">
       {
         exibindoOsJogos.map( (jogo, index)=> (
           <Card_jogos key={index} nome={jogo.nome} plataforma={jogo.plataforma}/>
