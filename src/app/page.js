@@ -26,7 +26,7 @@ const handleBuscarJogo = (textoDigitado) => {
 }
 
 return (
-  <main className='bg-gray-600 flex flex-col items-center justify-center text-center text-slate-300  text-xl py-5 font-medium'>
+  <main className='flex flex-col items-center justify-center text-center text-slate-300 text-xl py-5 font-medium'>
     <h1 className="text-4xl mb-5">Lista de Jogos</h1>
 
     <div className="flex items-center gap-5 bg-black my-10 px-5 w-3/6 h-10 text-center text-white rounded-full">
@@ -46,7 +46,7 @@ return (
       <button onClick={() => handleLimparFiltro()} className="bg-white text-black w-full rounded-lg">Limpar filtro</button>
     </div>
 
-    <div className="pt-10 flex flex-col gap-4 h-full bg-gray-600 ">
+    <div className="pt-10 flex flex-col gap-4 ">
       {
         exibindoOsJogos.map( (jogo, index)=> (
           <Card_jogos key={index} nome={jogo.nome} plataforma={jogo.plataforma}/>

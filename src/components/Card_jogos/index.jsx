@@ -13,7 +13,7 @@ export default function Card_jogos(props){
                     }
                 />
             </div>
-            <div className="text-white flex items-center text-center w-3/4">{props.nome}</div>
+            <div className="text-white flex items-center text-center w-3/4 p-2">{props.nome}</div>
         </div>
     )
 }
